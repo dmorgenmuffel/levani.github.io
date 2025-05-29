@@ -15,7 +15,20 @@
       background-color: #222;
       color: white;
       padding: 2rem;
-      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .header-text {
+      max-width: 70%;
+    }
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid white;
     }
     main {
       max-width: 800px;
@@ -51,14 +64,21 @@
 <body>
 
 <header>
-  <h1>Levani Samkharadze</h1>
-  <p>Informatikstudent | TU Graz</p>
+  <div class="header-text">
+    <h1>Levani Samkharadze</h1>
+    <p>Informatikstudent | TU Graz</p>
+  </div>
+  <a href="https://www.linkedin.com/in/levani-samkharadze" target="_blank">
+    <img src="https://media.licdn.com/dms/image/C4D03AQEabc123xyz456/profile-displayphoto-shrink_200_200/0/1650000000000?e=2147483647&v=beta&t=EXAMPLE" alt="LinkedIn-Profilbild" class="profile-pic">
+  </a>
 </header>
 
 <main>
   <section>
     <h2>Über mich</h2>
-    <p>Ich bin ein motivierter Informatikstudent an der <strong>TU Graz</strong>, leidenschaftlich interessiert an <span class="highlight">Softwareentwicklung, KI</span> und digitalen Lösungen. Aktuell suche ich nach einem <strong>flexiblen Nebenjob</strong>, um praktische Erfahrung zu sammeln und meinen Alltag zu finanzieren.</p>
+    <p>Ich bin ein engagierter Informatikstudent an der <strong>TU Graz</strong>, mit großer Begeisterung für den <span class="highlight">Tech-Bereich</span>, Softwareentwicklung und innovative Lösungen.  
+    Ich bin offen für <strong>praktische Erfahrungen, Praktika</strong> sowie einen <stronger>Berufseinstieg</strong> im Umfeld meines Studiums.  
+    Lernen, wachsen und kreative Projekte umsetzen – das treibt mich an.</p>
   </section>
 
   <section>
